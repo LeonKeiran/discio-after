@@ -1,4 +1,4 @@
-package com.zeeyeh.discio;
+package com.zeeyeh.discio.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2024/12/24/周二 20:39:06
  * @github <a href="https://github.com/LeonKeiran">https://github.com/LeonKeiran</a>
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.zeeyeh.discio")
 public class WebApplication {
 
     public static void main(String[] args) {
