@@ -1,6 +1,8 @@
 package com.zeeyeh.discio.framework.aspect;
 
 import com.zeeyeh.discio.common.annotations.RedisSelect;
+import com.zeeyeh.discio.framework.entity.RedisSelectSupport;
+import com.zeeyeh.discio.framework.entity.SelectableRedisTemplate;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
