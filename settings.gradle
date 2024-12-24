@@ -1,0 +1,2 @@
+rootProject.name = 'discio-after'
+include 'ds_web', 'ds_common', 'ds_system', 'ds_framework'
