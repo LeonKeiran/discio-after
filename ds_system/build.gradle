@@ -4,6 +4,10 @@ repositories {
 
 dependencies {
     api project(":ds_common")
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:3.4.1'
-	implementation 'mysql:mysql-connector-java:8.0.33'
+//	api 'org.springframework.boot:spring-boot-starter-data-jpa:3.4.1'
+    api 'com.baomidou:mybatis-plus-spring-boot3-starter:3.5.9'
+    api 'com.baomidou:mybatis-plus-jsqlparser:3.5.9'
+    api 'redis.clients:jedis'
+    api 'org.springframework.boot:spring-boot-starter-mail'
+    implementation 'mysql:mysql-connector-java:8.0.33'
 }

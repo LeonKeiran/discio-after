@@ -1,0 +1,75 @@
+# 服务器配置
+server:
+  # 服务器端口
+  port: 8080
+
+# 论坛配置
+ds:
+  name: Discio
+  mail:
+    from: bmlingqi@163.com
+  # 缓存相关配置
+  redis:
+    # 是否启用缓存
+    enable: true
+    # 默认数据库编号
+    default: 0
+    # 登录过期时间，单位秒
+    login-expire-seconds: 604800
+  # 安全配置
+  secure:
+    aes:
+      key: 0ryHafQycR/vzZ0YaqdcjtBH1kXSb9T0RsO7+azSdKI=
+      iv: x/LqK4zqLdRUwn+6fyAxFw==
+    # 响应配置
+    response:
+      # 响应过滤字段列表
+      exclude-fields: password,salt,deleted
+
+spring:
+  mail:
+    host: smtp.qq.com
+    port: 465
+    username: bmlingqi@163.com
+    password: JTmjVckT2vmiZpFu
+    default-encoding: UTF-8
+    properties:
+      mail:
+        debug: true
+        smtp:
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+  datasource:
+    url: jdbc:mysql://localhost:3306/discio?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: cnxy666..
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      database: 0
+      password: cnxy666..
+      timeout: 6000ms
+      jedis:
+        pool:
+          max-active: 100
+          max-wait: -1ms
+          max-idle: 10
+          min-idle: 5
+  cache:
+    type: none
+
+
+mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: deleted
+      logic-not-delete-value: 0
+      logic-delete-value: 1
+  mapper-locations: classpath:/mapper/**.xml
+  type-aliases-package: com.zeeyeh.discio.system.entity
+  type-handlers-package: com.zeeyeh.discio.system.data.type.handlers

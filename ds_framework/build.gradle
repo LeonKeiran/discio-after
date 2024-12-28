@@ -4,4 +4,7 @@ repositories {
 
 dependencies {
     api project(":ds_system")
+    api 'io.jsonwebtoken:jjwt-api:0.12.6'
+//    implementation 'org.springframework.boot:spring-boot-starter-velocity'
+    implementation 'org.springframework.boot:spring-boot-starter-velocity:1.4.7.RELEASE'
 }

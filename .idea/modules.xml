@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ds_common/discio-after.ds_common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ds_common/discio-after.ds_common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ds_framework/discio-after.ds_framework.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ds_framework/discio-after.ds_framework.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ds_system/discio-after.ds_system.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ds_system/discio-after.ds_system.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ds_web/discio-after.ds_web.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ds_web/discio-after.ds_web.main.iml" />
+    </modules>
+  </component>
+</project>

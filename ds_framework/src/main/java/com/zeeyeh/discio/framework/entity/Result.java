@@ -2,6 +2,7 @@ package com.zeeyeh.discio.framework.entity;
 
 import lombok.*;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,15 +13,14 @@ import java.util.Map;
  * @github <a href="https://github.com/LeonKeiran">https://github.com/LeonKeiran</a>
  */
 @Data
-@AllArgsConstructor(access = AccessLevel.PRIVATE)
-@NoArgsConstructor(access = AccessLevel.PRIVATE)
+@AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class Result<T> {
     private int code;
     private String message;
     private long timestamp;
     private T data;
-    @Singular
     private Map<String, Object> headers = new HashMap<>();
 
     public static <T> Result<T> success() {
@@ -77,6 +77,7 @@ public class Result<T> {
                 .message(message)
                 .timestamp(timestamp)
                 .data(data)
+                .headers(new HashMap<>())
                 .build();
     }
 
